@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Assignment - 2</h1>
+    <!-- Reverse a String -->
+        <div class="layout font-quicksand">
+            <section id="reverseString" class="question">
+                <div class="container">
+                    <h2 class="highlight light-font">Reverse String</h2>
+                    <div class="fields">
+                        <form>
+                            <input type="text" placeholder="Enter the string" id="reverseStringInput">
+                            <button type="button" id="reverseStringBtn" onclick="reverseStringDisplay()">Reverse String</button>
+                        </form>
+                    </div>
+                    <p id="reverseStringOutput" class="scriptOutput"></p>
+                </div>
+                </section>
+
+    <!-- Palindrome -->
+            <section id="palindrome" class="question">
+                <div class="container">
+
+                    <h2 class="highlight light-font">Palindrome</h2>
+                    <div class="fields">
+                        <form>
+                            <input type="number" placeholder="Enter the number" id="checkPalindromeInput">
+                            <button type="button" id="checkPalindromeBtn" onclick="checkPalindromeOutput()">Check Palindrome</button>
+                        </form>
+                    </div>
+                    <p id="checkPalindromeOutput" class="scriptOutput"></p>
+                </div>
+                </section>
+
+    <!-- Tip Calculator -->
+            <section id="bill" class="question">
+                <div class="container">
+
+                    <h2 class="highlight light-font">Bill Total</h2>
+                    <div class="fields">
+                        <form name="bill">
+                            <input type="text" placeholder="Enter subtotal amount" id="subTotalInput">
+                            <input type="text" placeholder="Enter tip percentage" id="tipInput">
+                            <button type="button" id="totalBillBtn" onclick="return calcSubTotalBill()">Total Bill</button>
+                        </form>
+                    </div>
+                    <p id="subTotalOutput" class="scriptOutput"></p>
+                    </div>
+                </section>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
